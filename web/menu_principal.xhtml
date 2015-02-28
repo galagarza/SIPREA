@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"    
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:c="http://java.sun.com/jsp/jstl/core">
+
+    <head>
+        <link href="./resources/css/estilos.css" rel="stylesheet" type="text/css"/>
+        <link href="./resources/css/bordes.css" rel="stylesheet" type="text/css"/>
+        <link href="./resources/css/menu.css" rel="stylesheet" type="text/css"/> 
+    </head>
+    <body>
+        <ui:composition>
+            <div id='cssmenu'>
+                <ul>
+                    <li  class='has-sub'><a href='administrador.xhtml'><span>Inicio</span></a></li>
+
+                    <li class='has-sub'><a href='#'><span>Usuarios</span></a>
+                        <ul>
+                            <li class='last'><a href='#'><span>Prestamo de Activos</span></a>
+                                <ul>
+                                    <li class='last'><a href='solicitudActivos.xhtml'><span>Solicitar préstamo de activos</span></a></li>
+                                    <li class='last'><a href='modificarSolicitud.xhtml'><span>Modificar solicitud de préstamos de activos</span></a></li>
+                                    <li class='last'><a href='moduloComunicacion.xhtml'><span>Comunicación</span></a></li>
+
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class='has-sub'><a href='#'><span>Administrativos</span></a>
+                        <ul>
+                            <li class='last'><a href='#'><span>Prestamo de activos</span></a>
+                                <ul>
+                                    <li class='last'><a href='#'><span>Solicitar préstamo de activos</span></a></li>
+                                    <li class='last'><a href='#'><span>Modificar solicitud de préstamos de activos</span></a></li>
+                                    <li class='last'><a href='consultarPrestamos.xhtml'><span>Consultar prestamos</span></a></li>
+                                    <li class='last'><a href='#'><span>Ejecutar el préstamo de activos</span></a></li>
+                                    <li class='last'><a href='devolverActivos.xhtml'><span>Realizar el proceso de devolución de activos</span></a></li>
+                                </ul>
+                            </li>
+                            <li class='last'><a href='#'><span>Administración de Funcionarios</span></a></li>
+                            <li class='last'><a href='#'><span>Administración de Activos</span></a></li>
+                            <li class='last'><a href='#'><span>Administración de Apartamentos</span></a></li>
+                            <li class='last'><a href='#'><span>Administración de Personal</span></a></li>
+                            <li class='last'><a href='#'><span>Comunicación</span></a></li>
+
+                        </ul>
+                    </li>
+
+                    <li class='has-sub'><a href='#'><span>Soporte</span></a>
+                        <ul>
+                            <li class='last'><a href='#'><span>Perfiles</span></a></li>
+                             <li class='last'><a href='moduloUsuario.xhtml'><span>Usuarios</span></a></li>
+                        </ul>
+                    </li>
+                     <li class='has-sub'><a href='index.xhtml'><span>Salir</span></a>
+                         
+                    </li>
+
+
+                </ul>
+            </div>
+        </ui:composition>
+    </body>
+</html>

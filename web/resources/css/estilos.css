@@ -1,0 +1,373 @@
+/* 
+    Document   : estilos
+    Created on : 07/08/2013, 12:04:25 AM
+    Author     : diegorf
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+@charset "utf-8";
+
+body{
+    background-image:url(../imagenes/gradiente_fondo.jpg);
+    background-color:#ffffff;
+    background-attachment:fixed;
+    background-position:top;
+    background-repeat:repeat-x;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:12px; 
+    color:#333333;  
+    line-height:13pt;
+
+
+}
+
+#contendor{
+    display: block;width: 975px;margin: auto; 
+
+}
+
+#encabezado{
+    position: relative;
+    background: url(../imagenes/fondo_encabezado.png);
+    width:97.2%;
+    margin-left:  14px;
+    top: -15px;
+    height: 111px;
+    z-index:3;
+
+}
+
+#adorno_encabezado
+{
+    display:block;
+    position:relative;
+    width:294px;
+    height:101px;
+    margin-top: -68px;
+    background:url(../imagenes/granos_cintillo.png);
+    float: right; 
+}
+
+#firma_ucr
+{
+    float: left;
+    margin-top: 14px;
+    margin-left:12px;
+    display:block;
+    width:170px;
+    height:63px;
+    background:url(../imagenes/mediano/firma_ucr.png);
+
+}
+
+#pie{
+    display: block;
+    position: relative;
+    background-color:white;
+    height:75px;
+    margin-left: 14px;
+    margin-right: 14px;
+    bottom: -15px;
+    z-index: 7;
+
+}
+
+#noticias{
+    margin-top: -17px;
+    display: block;
+    position: relative;
+    background: #7dbcd8;
+    width: auto;
+    height: auto;
+    float: start;
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight:bold;
+
+}
+
+#calendario{
+
+
+    display: block;
+    position: relative;
+    margin-top: 20px;
+    background: #cccccc;
+    float: right;
+    height: 200px;
+    width: 450px;
+
+}
+
+#importantes {
+display: block;
+position: relative;
+margin-top: 20px;
+height: 277px;
+width: 450px;
+}
+
+#importantes2 {
+float: right;
+border: solid #cccccc;
+width: 450px;
+position: relative;
+height: 269px;
+background-color: #ffffff;
+margin-top: -261px;
+margin-right: 20px;
+color: #7dbcd8;
+font-family: Arial, Helvetica, sans-serif;
+font-weight: bold;
+}
+
+
+#menu{
+
+    position: relative;
+    margin-left: 200px;
+    top: 10px;
+    z-index: 10;
+}
+
+#centro{
+    color: #7dbcd8;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight:bold;
+    position: relative;
+    background: activeborder;
+    width: 700px;
+    height: 200px;
+    float: start;
+    margin-left: 120px;
+    height: auto;
+}
+#titulo{
+    color: #7dbcd8;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 310px;
+    font: 200% sans-serif; 
+    height: auto;
+}
+#tituloEvaluacion{
+    color: #000000;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 310px;
+    font-weight:bold;
+    font: 200% sans-serif; 
+ 
+}
+
+#parrafo{
+     font-family: Arial, Helvetica, sans-serif;
+    font-size:14px;
+    font-weight:bold;
+    margin-top: 50px;
+    margin-left: 20px;
+    
+}
+#parrafo-derecha{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:14px;
+    font-weight:bold;
+    margin-top: -50px;
+    float:right;
+    
+}
+#parrafo1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:14px;
+    font-weight:bold;
+    margin-top: -22px;
+    margin-left: 250px;
+}
+
+.CSStablaAdministrador {
+margin:0px;padding:0px;
+width:100%;
+border:1px solid #000000;
+
+-moz-border-radius-bottomleft:9px;
+-webkit-border-bottom-left-radius:9px;
+border-bottom-left-radius:9px;
+
+-moz-border-radius-bottomright:9px;
+-webkit-border-bottom-right-radius:9px;
+border-bottom-right-radius:9px;
+
+-moz-border-radius-topright:9px;
+-webkit-border-top-right-radius:9px;
+border-top-right-radius:9px;
+
+-moz-border-radius-topleft:9px;
+-webkit-border-top-left-radius:9px;
+border-top-left-radius:9px;
+}.CSStablaAdministrador table{
+width:100%;
+height:100%;
+margin:0px;padding:0px;
+}.CSStablaAdministrador tr:last-child td:last-child {
+-moz-border-radius-bottomright:9px;
+-webkit-border-bottom-right-radius:9px;
+border-bottom-right-radius:9px;
+}
+.CSStablaAdministrador table tr:first-child td:first-child {
+-moz-border-radius-topleft:9px;
+-webkit-border-top-left-radius:9px;
+border-top-left-radius:9px;
+}
+.CSStablaAdministrador table tr:first-child td:last-child {
+-moz-border-radius-topright:9px;
+-webkit-border-top-right-radius:9px;
+border-top-right-radius:9px;
+}.CSStablaAdministrador tr:last-child td:first-child{
+-moz-border-radius-bottomleft:9px;
+-webkit-border-bottom-left-radius:9px;
+border-bottom-left-radius:9px;
+}.CSStablaAdministrador tr:hover td{
+background-color:#cccc99;
+}
+.CSStablaAdministrador td{
+vertical-align:middle;
+
+background-color:#666666;
+border:1px solid #000000;
+border-width:0px 1px 1px 0px;
+text-align:left;
+padding:7px;
+font-size:12px;
+font-family:Arial;
+font-weight:normal;
+color:#000000;
+}.CSStablaAdministrador tr:last-child td{
+border-width:0px 1px 0px 0px;
+}.CSStablaAdministrador tr td:last-child{
+border-width:0px 0px 1px 0px;
+}.CSStablaAdministrador tr:last-child td:last-child{
+border-width:0px 0px 0px 0px;
+}
+.CSStablaAdministrador tr:first-child td{
+background:-o-linear-gradient(bottom, #003366 5%, #003f7f 100%);	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #003366), color-stop(1, #003f7f) );
+background:-moz-linear-gradient( center top, #003366 5%, #003f7f 100% );
+filter:progid:DXImageTransform.Microsoft.gradient(startColorstr="#003366", endColorstr="#003f7f");	background: -o-linear-gradient(top,#003366,003f7f);
+background-color:#003366;
+border:0px solid #000000;
+text-align:center;
+border-width:0px 0px 1px 1px;
+font-size:16px;
+font-family:Arial;
+font-weight:bold;
+color:#ffffff;
+}
+.CSStablaAdministrador tr:first-child:hover td{
+background:-o-linear-gradient(bottom, #003366 5%, #003f7f 100%);	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #003366), color-stop(1, #003f7f) );
+background:-moz-linear-gradient( center top, #003366 5%, #003f7f 100% );
+filter:progid:DXImageTransform.Microsoft.gradient(startColorstr="#003366", endColorstr="#003f7f");	background: -o-linear-gradient(top,#003366,003f7f);
+background-color:#003366;
+}
+.CSStablaAdministrador tr:first-child td:first-child{
+border-width:0px 0px 1px 0px;
+}
+.CSStablaAdministrador tr:first-child td:last-child{
+border-width:0px 0px 1px 1px;
+}
+
+CSSTableGenerator {
+	margin:0px;padding:0px;
+	width:100%;
+	box-shadow: 10px 10px 5px #888588;
+	border:1px solid #000000;
+	
+	-moz-border-radius-bottomleft:12px;
+	-webkit-border-bottom-left-radius:12px;
+	border-bottom-left-radius:12px;
+	
+	-moz-border-radius-bottomright:12px;
+	-webkit-border-bottom-right-radius:12px;
+	border-bottom-right-radius:12px;
+	
+	-moz-border-radius-topright:12px;
+	-webkit-border-top-right-radius:12px;
+	border-top-right-radius:12px;
+	
+	-moz-border-radius-topleft:12px;
+	-webkit-border-top-left-radius:12px;
+	border-top-left-radius:12px;
+}.CSSTableGenerator table{
+	width:100%;
+	height:100%;
+	margin:0px;padding:0px;
+}.CSSTableGenerator tr:last-child td:last-child {
+	-moz-border-radius-bottomright:12px;
+	-webkit-border-bottom-right-radius:12px;
+	border-bottom-right-radius:12px;
+}
+.CSSTableGenerator table tr:first-child td:first-child {
+	-moz-border-radius-topleft:12px;
+	-webkit-border-top-left-radius:12px;
+	border-top-left-radius:12px;
+}
+.CSSTableGenerator table tr:first-child td:last-child {
+	-moz-border-radius-topright:12px;
+	-webkit-border-top-right-radius:12px;
+	border-top-right-radius:12px;
+}.CSSTableGenerator tr:last-child td:first-child{
+	-moz-border-radius-bottomleft:12px;
+	-webkit-border-bottom-left-radius:12px;
+	border-bottom-left-radius:12px;
+}.CSSTableGenerator tr:hover td{
+	background-color:#d8d4d4;
+		
+
+}
+.CSSTableGenerator td{
+	vertical-align:middle;
+		background:-o-linear-gradient(bottom, #afacac 5%, #d8d4d4 100%);	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #afacac), color-stop(1, #d8d4d4) ); 
+	background:-moz-linear-gradient( center top, #afacac 5%, #d8d4d4 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr="#afacac", endColorstr="#d8d4d4");	background: -o-linear-gradient(top,#afacac,d8d4d4);
+
+	background-color:#afacac;
+
+	border:1px solid #000000;
+	border-width:0px 1px 1px 0px;
+	text-align:left;
+	padding:9px;
+	font-size:15px;
+	font-family:Arial;
+	font-weight:normal;
+	color:#0a0808;
+}.CSSTableGenerator tr:last-child td{
+	border-width:0px 1px 0px 0px;
+}.CSSTableGenerator tr td:last-child{
+	border-width:0px 0px 1px 0px;
+}.CSSTableGenerator tr:last-child td:last-child{
+	border-width:0px 0px 0px 0px;
+}
+.CSSTableGenerator tr:first-child td{
+		background:-o-linear-gradient(bottom, #212020 5%, #8e8989 100%);	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #212020), color-stop(1, #8e8989) );
+	background:-moz-linear-gradient( center top, #212020 5%, #8e8989 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr="#212020", endColorstr="#8e8989");	background: -o-linear-gradient(top,#212020,8e8989);
+
+	background-color:#212020;
+	border:0px solid #000000;
+	text-align:center;
+	border-width:0px 0px 1px 1px;
+	font-size:16px;
+	font-family:Arial;
+	font-weight:bold;
+	color:#000000;
+}
+.CSSTableGenerator tr:first-child:hover td{
+	background:-o-linear-gradient(bottom, #212020 5%, #8e8989 100%);	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #212020), color-stop(1, #8e8989) );
+	background:-moz-linear-gradient( center top, #212020 5%, #8e8989 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr="#212020", endColorstr="#8e8989");	background: -o-linear-gradient(top,#212020,8e8989);
+
+	background-color:#212020;
+}
+.CSSTableGenerator tr:first-child td:first-child{
+	border-width:0px 0px 1px 0px;
+}
+.CSSTableGenerator tr:first-child td:last-child{
+	border-width:0px 0px 1px 1px;
+}

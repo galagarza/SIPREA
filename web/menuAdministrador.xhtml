@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets">
+
+    <head>
+        <link href="./resources/css/estilos.css" rel="stylesheet" type="text/css"/>
+        <link href="./resources/css/bordes.css" rel="stylesheet" type="text/css"/>
+        <link href="./resources/css/menu.css" rel="stylesheet" type="text/css"/> 
+    </head>
+    <body>
+        <ui:composition>
+            <div id='cssmenu'>
+                <ul>
+                    <li  class='has-sub'><a href='administrador.xhtml'><span>Inicio</span></a></li>
+
+                    <li class='has-sub'><a href='#'><span>Solicitudes</span></a>
+                        <ul>
+                                    <li class='last'><a href='solicitudActivos.xhtml'><span>Crear Solicitud de activos</span></a></li>
+                                    <li class='last'><a href='modificarSolicitud.xhtml'><span>Modificar solicitud de préstamos de activos</span></a></li>
+                                    <li class='last'><a href='#'><span>Consultar solicitud de préstamos de activos</span></a></li>
+
+                        </ul>
+                    </li>
+
+                    <li class='has-sub'><a href='#'><span>Prestamos</span></a>
+                       
+                                <ul>
+                                     <li class='last'><a href='prestamoActivo.xhtml'><span>Aprobar Solicitud</span></a></li>
+                                    <li class='last'><a href='consultarPrestamos.xhtml'><span>Consultar prestamos</span></a></li>
+                                    <li class='last'><a href='devolverActivos.xhtml'><span>Devolución de activos</span></a></li>
+                                </ul>
+                         
+                    </li>
+                    <li class='has-sub'><a href='#'><span>Módulos</span></a>
+                        <ul>
+                            <li class='last'><a href='moduloFuncionario.xhtml'><span>Administración de Funcionarios</span></a></li>
+                            <li class='last'><a href='#'><span>Administración de Activos</span></a></li>
+                            <li class='last'><a href='moduloDepartamento.xhtml'><span>Administración de Departamentos</span></a></li>
+                            <li class='last'><a href='moduloOficina.xhtml'><span>Administración de Oficinas</span></a></li>
+                            <li class='last'><a href='moduloUsuario.xhtml'><span>Administración de Usuarios</span></a></li>
+                        </ul>
+                    </li>
+
+                    <li class='has-sub'><a href='#'><span>Foro</span></a>
+                        <ul>
+                            
+                            
+                            <li class='last'><a href='moduloComunicacion.xhtml'><span>Comunicación</span></a></li>
+
+                        </ul>
+                    </li>
+
+                    <li class='has-sub'><a href='#'><span>Soporte</span></a>
+                        <ul>
+                           
+                            <li class='last'><a href='moduloUsuario.xhtml'><span>Administración de Usuarios</span></a></li>
+                             <li class='last'><a href='#'><span>Administración de Perfiles</span></a></li>
+                            <li class='last'><a href='#'><span>Respaldos</span></a></li>
+                            <li class='last'><a href='#'><span>Historial</span></a></li>
+                        </ul>
+                    </li>
+                    <li class='has-sub'><a href='index.xhtml'><span>Salir</span></a>
+
+                    </li>
+
+
+                </ul>
+            </div>
+        </ui:composition>
+    </body>
+</html>

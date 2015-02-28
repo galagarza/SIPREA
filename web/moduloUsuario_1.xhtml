@@ -1,0 +1,131 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:p="http://primefaces.org/ui">
+    <h:head>
+        <title>Sistema de Solicitud y Prestamo de Activos </title>
+        <link href="./resources/css/estilos.css" rel="stylesheet" type="text/css"/>
+        <link href="./resources/css/bordes.css" rel="stylesheet" type="text/css"/>
+        <link href="./resources/css/menu.css" rel="stylesheet" type="text/css"/>
+        <link href="./resources/css/form.css" rel="stylesheet" type="text/css"/>
+
+
+    </h:head>
+    <h:body>
+
+        <div id="contendor">
+            <div id="top"></div>
+            <div class="top_left">
+                <div class="top_right"></div>
+            </div>
+            <div class="left">
+                <div class="right">
+
+                    <div id="encabezado">
+                        <ui:insert name="encabezado">
+                            <h:form>
+                                <h:outputLink value="http://www.ucr.ac.cr">
+                                    <div id="firma_ucr"></div>
+                                </h:outputLink> 
+                            </h:form>
+                            <ui:insert name="menu">
+
+                                <div  id="menu">
+                                    <ui:include src="menuAdministrador.xhtml"></ui:include>
+                                </div>
+
+                            </ui:insert>
+                            <div id="adorno_encabezado"></div>
+                        </ui:insert>
+                    </div>
+
+
+
+                    <div id="interno">
+                        <ui:insert name="contenido">
+                            <div id="noticias">
+
+                                <br/><br/>
+
+                                <center>  <h1>Sistema de Prestamo de Activos UCR SP</h1> </center>
+                                <br/><br/>
+                            </div>
+                            <div id="importantes_">
+                                <center>
+                                    <h:graphicImage value="./resources/imagenes/evaluacion.jpg"></h:graphicImage>
+                                </center>
+                            </div>
+
+                            <div id="importantes2_">
+                                <h:form>
+                                    <center><br/>
+                                        <h2>Ingreso al Sistema</h2>
+                                        <table>
+                                            <tr>
+                                                <td>  <h3> <h:outputLabel value="Cédula:"/></h3></td> 
+                                                <td> <h:inputText value="#{usuarioBean.cedula}" required="true"/>
+                                                    <h:commandButton actionListener="#{moduloUsuario.buscarCedula}" value="buscar cedula"/>
+                                                    <h:message for="cedula"></h:message>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td> <h3><h:outputLabel value="Nombre:"/></h3></td>
+                                                <td>  <h:inputText value="#{usuarioBean.nombre}" required="true" disabled="true"/>
+                                                    <h:message for="nombre"></h:message></td>
+                                            </tr>
+                                            <tr>
+                                                <td> <h3><h:outputLabel value="Usuario:"/></h3></td>
+                                                <td>  <h:inputText value="#{usuarioBean.id}" required="true"/>
+                                                    <h:message for="id"></h:message></td>
+                                            </tr>
+                                            <tr>
+                                                <td> <h3><h:outputLabel value="Clave:"/></h3></td>
+                                                <td>  <h:inputText value="#{usuarioBean.clave}" required="true"/>
+                                                    <h:message for="clave"></h:message></td>
+                                            </tr>
+                                            <tr>
+                                                <td><h3><h:outputLabel value="Perfil:"/></h3></td>
+                                                <td>
+                                                    <p:selectOneMenu value="#{usuarioBean.perfil}" rendered="true">
+                                                        <f:selectItem itemValue="docente" itemLabel="Docente"></f:selectItem>
+                                                        <f:selectItem itemValue="administrador" itemLabel="Administrador"></f:selectItem>
+                                                        <f:selectItem itemValue="consulta" itemLabel="Consulta"></f:selectItem>
+                                                    </p:selectOneMenu>
+                                                    <h:message for="perfil"></h:message>
+                                                </td>
+                                            </tr>
+
+                                        </table>
+
+
+                                        <h:commandButton action="#{moduloUsuario.insertarUsuario}" value="Agregar" ></h:commandButton>
+
+                                    </center>
+                                </h:form>
+                            </div>
+                        </ui:insert>
+
+                    </div>
+                    <div id="pie_">
+                        <ui:insert name="pie">
+                            <h:graphicImage value="./resources/imagenes/horizonte_inferior.png" width="100%" height="75px" > </h:graphicImage>
+                        </ui:insert>
+                    </div>
+                </div>
+                <div class="bottom_left_">
+                    <div class="bottom_right"></div>
+
+                    <div class="bottom"></div>
+                </div>
+
+
+            </div>
+        </div>
+
+    </h:body>
+</html>
+
+

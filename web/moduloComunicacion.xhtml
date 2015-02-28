@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui">
+    <h:head>
+        <title>Facelet Title</title>
+    </h:head>
+    <h:body>
+        <f:view>
+            <ui:composition template="template.xhtml">
+                <ui:define name="contenido">
+
+                    <p:tabView>
+                        <p:tab title="Enviar mensaje">
+                            <h:form>
+                                <b>   <h:outputLabel value="Fecha: "></h:outputLabel></b>
+                                <h:outputText value="#{controlComunicaciones.fechaActual}"></h:outputText><br/><br/>
+                                <b> <h:outputText value="Destinatario:  "></h:outputText></b>
+                                <h:form id="idR">
+                                    <p:selectOneMenu  valueChangeListener="#{controlComunicaciones.idComunicacionRemitente}" onchange="this.form.submit()" required="true" value="#{controlComunicaciones.destinatario.cedula}" id="destinatarioId">
+                                        <f:selectItem itemValue="1" itemLabel="Seleccionar Destinatario:  "></f:selectItem>
+                                        <f:selectItems value="#{controlComunicaciones.selectItemsDestinatario}"></f:selectItems>
+                                    </p:selectOneMenu>
+                                </h:form>
+                                <br/>
+                                <b>  <h:outputLabel value="Remitente:  "></h:outputLabel></b>
+                                <h:outputText value="#{controlLogin.usuarioBean.nombre}"></h:outputText><br/><br/>
+                                <b> <h:outputText value="Escriba el mensaje que desea enviar."></h:outputText></b><br/><br/>
+                                <p:editor id="editor" widgetVar="editorWidget" value="#{controlComunicaciones.texto}" width="600">
+                                    <f:param name="texto" value="#{controlComunicaciones.texto}"></f:param>
+                                </p:editor>
+
+                                <h:panelGrid  columns="2" style="margin-top: 10px">
+                                    <p:commandButton value="Enviar" actionListener="#{controlComunicaciones.buttonAction(actionEvent)}" icon="ui-icon-disk" />
+                                    <p:commandButton value="Limpiar" type="button" onclick="PF('editorWidget').clear();" icon="ui-icon-close" />
+                                </h:panelGrid>
+
+                                <p:dialog header="Content" widgetVar="dlg" showEffect="fade" hideEffect="fade">
+                                    <h:outputText id="display" value="#{controlComunicaciones.texto}" escape="false" />
+                                </p:dialog>
+                            </h:form>
+                        </p:tab>
+                        <p:tab title="Recibir mensajes">
+                            <b>  <h:outputText value="Marcos Alexis Venegas"></h:outputText></b><br/>
+                            <h:outputText value="Verificar solicitus código 001 ya que el proyector 0044 se encuentra dañado."></h:outputText><br/>
+                            <b>  <h:outputText value="Aarón Galagarza"></h:outputText></b><br/>
+                            <h:outputText value="Cúal proyector me recomienda para la actividad del lunes en la tarde?."></h:outputText><br/>
+                            <b>  <h:outputText value="Marcos Alexis Venegas"></h:outputText></b><br/>
+                            <h:outputText value="El proyectos placa 00344 es la mejor opción para ese tipo de actividad."></h:outputText><br/>
+                            <b>  <h:outputText value="Aarón Galagarza"></h:outputText></b><br/>
+                            <h:outputText value="Pura vida. Ya realicé la modificación. Gracias!"></h:outputText><br/>
+
+                        </p:tab>
+                    </p:tabView>
+                </ui:define>
+            </ui:composition>
+        </f:view>
+    </h:body>
+</html>
+

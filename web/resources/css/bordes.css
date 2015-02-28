@@ -1,0 +1,121 @@
+/* 
+    Document   : bordes
+    Created on : 06/08/2013, 10:54:45 PM
+    Author     : diegorf
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+@charset"utf-8";
+
+#top
+{
+    display: block;
+	background-color: #cccccc;
+	height: 5px;
+	
+	margin-top: 10px;
+        position: relative;
+        
+        z-index: 4;
+        width: 100%
+}
+
+.top_left 
+{
+    display: block;
+	background:	url(../imagenes/top_left.png) top left no-repeat;
+	height: 19px;
+        position: relative;
+        z-index: 4;
+        margin-top: -6px;
+        margin-left: -10px;
+        
+        
+        
+       
+        
+}
+
+.top_right 
+{
+    display: block;
+	height: 19px;
+	background: url(../imagenes/top_right.png) top right no-repeat;
+        position: relative;
+        z-index: 4;
+        margin-top: -6px;
+        margin-right: -10px;
+        
+            
+}
+
+.top_left + .left 
+{
+	background:	url(../imagenes/left.png) bottom left;
+	background-repeat:repeat-y;
+        margin-left: -10px;
+        margin-top: 16px;
+}
+
+.left > .right
+ {
+     display: block;
+	background:	url(../imagenes/right.png) top right;
+	background-repeat:repeat-y;
+        position: relative;
+        z-index: 1;
+        margin-top: -16px;
+        margin-right: -10px;
+        padding-top: -100px;
+        
+        
+}
+
+
+.bottom_left {
+    background: url("../imagenes/bottom_left.png") no-repeat scroll left top rgba(0, 0, 0, 0);
+    display: block;
+    height: 28px;
+    margin-left: 0;
+    position: relative;
+    z-index: 0;
+}
+
+.bottom_right 
+{
+	height:29px;
+	background: url(../imagenes/bottom_right.png) top right no-repeat;
+	margin-right: -10px;
+         
+          position: relative;
+          z-index: 0;
+}
+
+.bottom
+{
+	background-image:url(../imagenes/bottom.png);	
+	background-repeat:repeat-x;
+	height:14px;
+	margin-top:    -14px;
+	margin-left:   32px;
+        margin-right:  22px;
+	padding-bottom:14px;
+        z-index: 5;
+        position: relative;
+}
+
+
+#interno 
+{      
+    position: relative;
+        display: block;
+	margin-top:-60px;
+	 margin-right: 14px;
+         margin-left: 14px;
+	background-color:white;
+	padding: 20px;
+	bottom: -15px;
+        z-index: 1;
+        height: auto;
+}
